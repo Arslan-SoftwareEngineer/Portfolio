@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Skills Matrix | Muhammad Arslan Jaffer</title>
+  <meta name="description" content="Detailed skills breakdown: AI/ML, PyTorch, TensorFlow, Pinecone, n8n, Python, C++, Full-Stack Web, Databases, and Tools.">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+  <div class="cyber-grid-overlay"></div>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <main class="ide-container">
+    <!-- Top Application Bar -->
+    <header class="ide-titlebar">
+      <div class="ide-window-controls">
+        <span class="window-dot dot-red"></span>
+        <span class="window-dot dot-yellow"></span>
+        <span class="window-dot dot-green"></span>
+      </div>
+
+      <div class="ide-breadcrumbs">
+        <span>workspace</span>
+        <span class="separator">/</span>
+        <span>arslan-jaffer</span>
+        <span class="separator">/</span>
+        <span class="active-file" id="active-file-breadcrumb">skills.yml</span>
+      </div>
+
+      <div class="ide-quick-actions">
+        <div class="git-badge">
+          <span class="pulse"></span>
+          <span>git:(main)</span>
+        </div>
+        <button id="theme-toggle-btn" class="theme-toggle-btn">
+          <span>🌙 DARK</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- IDE Tab Bar -->
+    <nav class="ide-tabs-bar" aria-label="Page Tabs">
+      <a href="index.html" class="ide-tab">
+        <span class="tab-icon">🐍</span>
+        <span>home.py</span>
+      </a>
+      <a href="about.html" class="ide-tab">
+        <span class="tab-icon">📝</span>
+        <span>about.md</span>
+      </a>
+      <a href="projects.html" class="ide-tab">
+        <span class="tab-icon">⚡</span>
+        <span>projects.json</span>
+      </a>
+      <a href="experience.html" class="ide-tab">
+        <span class="tab-icon">🔷</span>
+        <span>experience.ts</span>
+      </a>
+      <a href="skills.html" class="ide-tab active">
+        <span class="tab-icon">⚙️</span>
+        <span>skills.yml</span>
+      </a>
+      <a href="contact.html" class="ide-tab">
+        <span class="tab-icon">💻</span>
+        <span>contact.sh</span>
+      </a>
+    </nav>
+
+    <!-- Content Area -->
+    <div class="ide-body">
+      <!-- Page Header -->
+      <section class="page-title-block">
+        <div class="page-badge">
+          <span>⚙️</span> STACK &amp; CAPABILITIES
+        </div>
+        <h1 class="page-title">
+          Skills Matrix <span class="slash">//</span> Developer Toolkit
+        </h1>
+        <p class="page-subtitle">
+          Core competencies, specialized AI frameworks, programming languages, agentic orchestration engines, 
+          and system design principles.
+        </p>
+      </section>
+
+      <!-- YAML-Styled Configuration Preview -->
+      <section class="code-editor-card" style="margin-bottom: 32px;">
+        <div class="code-editor-header">
+          <div class="file-meta">
+            <span>⚙️</span>
+            <span>stack_config.yml</span>
+            <span class="code-inline" style="font-size: 0.7rem;">YAML 1.2</span>
+          </div>
+          <span style="color: var(--accent-emerald); font-size: 0.75rem;">Verified Production Dependencies</span>
+        </div>
+        <div class="code-editor-content">
+          <div class="line-numbers">
+            1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14
+          </div>
+          <div class="code-lines"><span class="kw">engineer</span>: <span class="str">"Muhammad Arslan Jaffer"</span>
+<span class="kw">primary_focus</span>:
+  - <span class="str">"Deep Learning &amp; RAG Pipelines"</span>
+  - <span class="str">"Agentic Workflows (n8n + Python Microagents)"</span>
+  - <span class="str">"Assistive AI &amp; Voice Systems"</span>
+<span class="kw">stack_highlights</span>:
+  <span class="fn">languages</span>: [<span class="str">"Python"</span>, <span class="str">"C++"</span>, <span class="str">"C#"</span>, <span class="str">"Dart"</span>, <span class="str">"SQL"</span>, <span class="str">"JavaScript"</span>]
+  <span class="fn">ai_ml</span>: [<span class="str">"PyTorch"</span>, <span class="str">"TensorFlow"</span>, <span class="str">"Pinecone"</span>, <span class="str">"XGBoost"</span>, <span class="str">"Groq"</span>, <span class="str">"Whisper"</span>]
+  <span class="fn">web_mobile</span>: [<span class="str">"Streamlit"</span>, <span class="str">"Flutter"</span>, <span class="str">"React"</span>, <span class="str">"Node.js"</span>, <span class="str">"Express"</span>, <span class="str">"Flask"</span>]
+  <span class="fn">infrastructure</span>: [<span class="str">"Linux (Ubuntu/Fedora)"</span>, <span class="str">"Docker"</span>, <span class="str">"Git/GitHub"</span>, <span class="str">"Netlify"</span>]
+<span class="kw">status</span>: <span class="str">"Operational &amp; Scaling"</span></div>
+        </div>
+      </section>
+
+      <!-- Skills Categorized Grid -->
+      <section class="skills-group-grid" aria-label="Categorized Skills">
+        <!-- AI & Machine Learning -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🤖</span>
+            <h3 class="skill-cat-title">AI &amp; Machine Learning</h3>
+          </div>
+          <div class="skill-items-list">
+            <span class="skill-pill"><span class="dot"></span> PyTorch</span>
+            <span class="skill-pill"><span class="dot"></span> TensorFlow</span>
+            <span class="skill-pill"><span class="dot"></span> scikit-learn</span>
+            <span class="skill-pill"><span class="dot"></span> XGBoost</span>
+            <span class="skill-pill"><span class="dot"></span> Pinecone (Vector DB)</span>
+            <span class="skill-pill"><span class="dot"></span> Groq LPU API</span>
+            <span class="skill-pill"><span class="dot"></span> OpenAI Whisper STT</span>
+            <span class="skill-pill"><span class="dot"></span> Edge-TTS</span>
+            <span class="skill-pill"><span class="dot"></span> OpenCV</span>
+            <span class="skill-pill"><span class="dot"></span> RAG Pipelines</span>
+            <span class="skill-pill"><span class="dot"></span> LLM Prompt Engineering</span>
+          </div>
+        </div>
+
+        <!-- Programming Languages -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">💻</span>
+            <h3 class="skill-cat-title">Programming Languages</h3>
+          </div>
+          <div class="skill-items-list">
+            <span class="skill-pill"><span class="dot"></span> Python</span>
+            <span class="skill-pill"><span class="dot"></span> C++</span>
+            <span class="skill-pill"><span class="dot"></span> C# (.NET / Unity)</span>
+            <span class="skill-pill"><span class="dot"></span> Flutter / Dart</span>
+            <span class="skill-pill"><span class="dot"></span> JavaScript (ES6+)</span>
+            <span class="skill-pill"><span class="dot"></span> SQL (Relational)</span>
+          </div>
+        </div>
+
+        <!-- Automation & Agentic Workflows -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">⚡</span>
+            <h3 class="skill-cat-title">Agentic AI &amp; Automation</h3>
+          </div>
+          <div class="skill-items-list">
+            <span class="skill-pill"><span class="dot"></span> n8n Agentic Workflows</span>
+            <span class="skill-pill"><span class="dot"></span> Python AI Agents</span>
+            <span class="skill-pill"><span class="dot"></span> LangChain</span>
+            <span class="skill-pill"><span class="dot"></span> Webhooks &amp; Event DAGs</span>
+            <span class="skill-pill"><span class="dot"></span> Task Orchestration</span>
+          </div>
+        </div>
+
+        <!-- Web & App Development -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🌐</span>
+            <h3 class="skill-cat-title">Web &amp; App Frameworks</h3>
+          </div>
+          <div class="skill-items-list">
+            <span class="skill-pill"><span class="dot"></span> Streamlit Cloud</span>
+            <span class="skill-pill"><span class="dot"></span> Flutter (Mobile)</span>
+            <span class="skill-pill"><span class="dot"></span> React</span>
+            <span class="skill-pill"><span class="dot"></span> Next.js</span>
+            <span class="skill-pill"><span class="dot"></span> Node.js</span>
+            <span class="skill-pill"><span class="dot"></span> Express.js</span>
+            <span class="skill-pill"><span class="dot"></span> Flask</span>
+            <span class="skill-pill"><span class="dot"></span> RESTful APIs</span>
+          </div>
+        </div>
+
+        <!-- Databases & Storage -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🗄️</span>
+            <h3 class="skill-cat-title">Databases &amp; Vectors</h3>
+          </div>
+          <div class="skill-items-list">
+            <span class="skill-pill"><span class="dot"></span> Pinecone Vector Index</span>
+            <span class="skill-pill"><span class="dot"></span> MongoDB (NoSQL)</span>
+            <span class="skill-pill"><span class="dot"></span> MySQL</span>
+            <span class="skill-pill"><span class="dot"></span> Oracle Database</span>
+            <span class="skill-pill"><span class="dot"></span> SQLite</span>
+          </div>
+        </div>
+
+        <!-- Tools & Environments -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🛠️</span>
+            <h3 class="skill-cat-title">Tools &amp; Environments</h3>
+          </div>
+          <div class="skill-items-list">
+            <span class="skill-pill"><span class="dot"></span> Linux (Ubuntu, Fedora)</span>
+            <span class="skill-pill"><span class="dot"></span> Docker</span>
+            <span class="skill-pill"><span class="dot"></span> Git / GitHub</span>
+            <span class="skill-pill"><span class="dot"></span> Visual Studio Code</span>
+            <span class="skill-pill"><span class="dot"></span> Android Studio</span>
+            <span class="skill-pill"><span class="dot"></span> Unity (C# / SFML)</span>
+            <span class="skill-pill"><span class="dot"></span> Postman</span>
+            <span class="skill-pill"><span class="dot"></span> Google AI Studio</span>
+            <span class="skill-pill"><span class="dot"></span> Cisco Packet Tracer</span>
+          </div>
+        </div>
+
+        <!-- Core Fundamentals & SDLC -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">📐</span>
+            <h3 class="skill-cat-title">Core Fundamentals &amp; SDLC</h3>
+          </div>
+          <div class="skill-items-list">
+            <span class="skill-pill"><span class="dot"></span> Object-Oriented Design</span>
+            <span class="skill-pill"><span class="dot"></span> Data Structures &amp; Algorithms</span>
+            <span class="skill-pill"><span class="dot"></span> Requirements Engineering</span>
+            <span class="skill-pill"><span class="dot"></span> Software Architecture</span>
+            <span class="skill-pill"><span class="dot"></span> Quality Engineering &amp; QA</span>
+            <span class="skill-pill"><span class="dot"></span> Human-Computer Interaction</span>
+            <span class="skill-pill"><span class="dot"></span> Systems Thinking</span>
+          </div>
+        </div>
+
+        <!-- Professional & Soft Skills -->
+        <div class="skill-category-card">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🤝</span>
+            <h3 class="skill-cat-title">Professional &amp; Soft Skills</h3>
+          </div>
+          <div class="skill-items-list">
+            <span class="skill-pill"><span class="dot"></span> Creative Problem Solving</span>
+            <span class="skill-pill"><span class="dot"></span> Cross-Functional Teamwork</span>
+            <span class="skill-pill"><span class="dot"></span> Adaptability &amp; Self-Learning</span>
+            <span class="skill-pill"><span class="dot"></span> Workflow Optimization</span>
+            <span class="skill-pill"><span class="dot"></span> Visual Branding &amp; Design</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- IDE Status Bar -->
+    <footer class="ide-statusbar">
+      <div class="statusbar-left">
+        <span class="statusbar-item git">
+          <span>🌿</span> <span>main*</span>
+        </span>
+        <span class="statusbar-item status-ok">
+          <span>✓</span> <span>8 skill categories active</span>
+        </span>
+      </div>
+      <div class="statusbar-right">
+        <span class="statusbar-item statusbar-extra">YAML 1.2</span>
+        <span class="statusbar-item status-ok">● Netlify Ready</span>
+        <span class="statusbar-item" id="statusbar-clock">--:--:-- PKT</span>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/matrix-canvas.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

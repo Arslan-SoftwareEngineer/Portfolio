@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Arslan Jaffer | Software Engineer & AI Developer</title>
+  <meta name="description" content="Portfolio of Muhammad Arslan Jaffer — Software Engineer and AI Developer specializing in Deep Learning, RAG, Agentic AI Workflows, and Full-Stack Engineering.">
+  <meta name="keywords" content="Muhammad Arslan Jaffer, Software Engineer, AI Developer, Deep Learning, RAG, Streamlit, Python, PyTorch, Air University">
+  <meta name="author" content="Muhammad Arslan Jaffer">
+
+  <!-- OpenGraph / Meta -->
+  <meta property="og:title" content="Muhammad Arslan Jaffer | Software Engineer & AI Developer">
+  <meta property="og:description" content="Explore AI/ML projects, Streamlit apps, publications, and full-stack software by Muhammad Arslan Jaffer.">
+  <meta property="og:type" content="website">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Ambient High-Tech Effects -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="cyber-grid-overlay"></div>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- IDE Window Shell -->
+  <main class="ide-container">
+    <!-- Top Application Bar -->
+    <header class="ide-titlebar">
+      <div class="ide-window-controls">
+        <span class="window-dot dot-red" title="Close"></span>
+        <span class="window-dot dot-yellow" title="Minimize"></span>
+        <span class="window-dot dot-green" title="Expand"></span>
+      </div>
+
+      <div class="ide-breadcrumbs">
+        <span>workspace</span>
+        <span class="separator">/</span>
+        <span>arslan-jaffer</span>
+        <span class="separator">/</span>
+        <span class="active-file" id="active-file-breadcrumb">home.py</span>
+      </div>
+
+      <div class="ide-quick-actions">
+        <div class="git-badge">
+          <span class="pulse"></span>
+          <span>git:(main)</span>
+        </div>
+        <button id="theme-toggle-btn" class="theme-toggle-btn" title="Toggle Light/Dark Theme">
+          <span>🌙 DARK</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- IDE Tab Bar (Multi-Page Navigation) -->
+    <nav class="ide-tabs-bar" aria-label="Page Tabs">
+      <a href="index.html" class="ide-tab active">
+        <span class="tab-icon">🐍</span>
+        <span>home.py</span>
+      </a>
+      <a href="about.html" class="ide-tab">
+        <span class="tab-icon">📝</span>
+        <span>about.md</span>
+      </a>
+      <a href="projects.html" class="ide-tab">
+        <span class="tab-icon">⚡</span>
+        <span>projects.json</span>
+      </a>
+      <a href="experience.html" class="ide-tab">
+        <span class="tab-icon">🔷</span>
+        <span>experience.ts</span>
+      </a>
+      <a href="skills.html" class="ide-tab">
+        <span class="tab-icon">⚙️</span>
+        <span>skills.yml</span>
+      </a>
+      <a href="contact.html" class="ide-tab">
+        <span class="tab-icon">💻</span>
+        <span>contact.sh</span>
+      </a>
+    </nav>
+
+    <!-- IDE Content Area -->
+    <div class="ide-body">
+      <!-- Eyebrow & Hero Title -->
+      <section class="page-title-block">
+        <div class="page-badge">
+          <span>●</span> Software Engineering & AI Systems
+        </div>
+        <h1 class="page-title">
+          Muhammad Arslan Jaffer <span class="slash">//</span> Dev Command Center
+        </h1>
+        <p class="page-subtitle">
+          BS Software Engineering student at Air University, Islamabad. Architecting Deep Learning models, 
+          RAG pipelines, autonomous agentic workflows, and high-performance software solutions.
+        </p>
+      </section>
+
+      <!-- Code Editor Mockup Hero -->
+      <section class="code-editor-card" aria-label="Developer Profile in Code">
+        <div class="code-editor-header">
+          <div class="file-meta">
+            <span>📄</span>
+            <span>developer_profile.py</span>
+            <span class="code-inline" style="font-size: 0.7rem;">Python 3.11</span>
+          </div>
+          <div style="color: var(--accent-emerald); font-size: 0.75rem;">
+            ● Active Profile
+          </div>
+        </div>
+        <div class="code-editor-content">
+          <div class="line-numbers">
+            1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19
+          </div>
+          <div class="code-lines"><span class="kw">class</span> <span class="fn">SoftwareEngineer</span>:
+    <span class="kw">def</span> <span class="fn">__init__</span>(<span class="var">self</span>):
+        <span class="var">self</span>.name = <span class="str">"Muhammad Arslan Jaffer"</span>
+        <span class="var">self</span>.role = <span class="str">"Software Engineer &amp; AI Developer"</span>
+        <span class="var">self</span>.education = <span class="str">"BSc Software Engineering @ Air University, Islamabad"</span>
+        <span class="var">self</span>.location = <span class="str">"Rawalpindi / Islamabad, Pakistan"</span>
+        <span class="var">self</span>.core_focus = [
+            <span class="str">"Deep Learning &amp; NLP"</span>,
+            <span class="str">"Retrieval-Augmented Generation (RAG)"</span>,
+            <span class="str">"Autonomous Agentic Workflows (n8n &amp; Python)"</span>,
+            <span class="str">"Computer Vision &amp; Multimodal AI"</span>,
+            <span class="str">"Full-Stack Web &amp; Mobile Applications"</span>
+        ]
+        <span class="var">self</span>.contact = <span class="str">"ars3lan.se@gmail.com"</span>
+        <span class="var">self</span>.status = <span class="str">"Ready for Impactful Engineering Roles"</span>
+
+    <span class="kw">def</span> <span class="fn">execute_mission</span>(<span class="var">self</span>):
+        <span class="kw">return</span> <span class="str">"Bridging cutting-edge AI research with reliable production code."</span></div>
+        </div>
+      </section>
+
+      <!-- Quick Action Buttons -->
+      <section style="display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 28px;">
+        <a href="projects.html" class="btn btn-primary">
+          <span>⚡ Explore All 10 Projects</span>
+        </a>
+        <a href="projects.html?filter=streamlit" class="btn btn-accent-emerald">
+          <span>🚀 Launch Streamlit Apps</span>
+        </a>
+        <a href="about.html" class="btn btn-secondary">
+          <span>📄 Read Bio &amp; Research</span>
+        </a>
+        <a href="contact.html" class="btn btn-secondary">
+          <span>📫 Get in Touch</span>
+        </a>
+      </section>
+
+      <!-- Developer Stats Strip -->
+      <section class="stats-strip" aria-label="Key Developer Metrics">
+        <div class="stat-item">
+          <div class="stat-value">10<span class="plus">+</span></div>
+          <div class="stat-label">Software &amp; AI Projects</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">1<span class="plus">st</span></div>
+          <div class="stat-label">IBCAST 2026 Paper</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">3<span class="plus">x</span></div>
+          <div class="stat-label">Industry Internships</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">2<span class="plus">x</span></div>
+          <div class="stat-label">Campus Leadership Roles</div>
+        </div>
+      </section>
+
+      <!-- Interactive Developer Terminal -->
+      <section style="margin-bottom: 36px;">
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <div class="terminal-title">
+              <span>🖥️</span>
+              <span>bash - arslan@developer: ~ (zsh)</span>
+            </div>
+            <div style="font-size: 0.72rem; color: var(--text-dim);">
+              interactive CLI v2.4
+            </div>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-history" id="terminal-history">
+              <div class="terminal-entry">
+                <div class="terminal-prompt-line">
+                  <span class="terminal-prompt-label">arslan@developer<span class="symbol">:~$</span></span>
+                  <span style="color: #fff;">welcome</span>
+                </div>
+                <div class="terminal-output info">
+Welcome to Muhammad Arslan Jaffer's interactive terminal!
+Type 'help' to see available commands or click the shortcut chips below.
+                </div>
+              </div>
+            </div>
+            <div class="terminal-prompt-line">
+              <label for="terminal-input" class="terminal-prompt-label">
+                arslan@developer<span class="symbol">:~$</span>
+              </label>
+              <input type="text" id="terminal-input" class="terminal-input" placeholder="type 'skills', 'projects', 'fyp', or 'contact'..." autocomplete="off" spellcheck="false">
+            </div>
+          </div>
+          <div class="terminal-quick-cmds">
+            <span style="color: var(--text-dim); font-size: 0.72rem; display: flex; align-items: center; margin-right: 4px;">Quick Run:</span>
+            <button class="quick-cmd-btn" onclick="runTerminalCmd('whoami')">whoami</button>
+            <button class="quick-cmd-btn" onclick="runTerminalCmd('skills')">skills</button>
+            <button class="quick-cmd-btn" onclick="runTerminalCmd('projects')">projects</button>
+            <button class="quick-cmd-btn" onclick="runTerminalCmd('fyp')">fyp (AutiCom)</button>
+            <button class="quick-cmd-btn" onclick="runTerminalCmd('publication')">publication</button>
+            <button class="quick-cmd-btn" onclick="runTerminalCmd('contact')">contact</button>
+            <button class="quick-cmd-btn" onclick="runTerminalCmd('clear')">clear</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects Launchpad -->
+      <section style="margin-bottom: 20px;">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+          <div>
+            <span class="code-inline" style="font-size: 0.75rem;">// HIGHLIGHTS</span>
+            <h2 style="font-size: 1.5rem; color: #fff; margin-top: 4px;">Featured Deployments</h2>
+          </div>
+          <a href="projects.html" class="link-btn primary-link">
+            View All 10 Projects →
+          </a>
+        </div>
+
+        <div class="projects-grid" id="featured-projects-grid">
+          <!-- Rendered via js/projects.js -->
+        </div>
+      </section>
+    </div>
+
+    <!-- IDE Status Bar (Footer) -->
+    <footer class="ide-statusbar">
+      <div class="statusbar-left">
+        <span class="statusbar-item git">
+          <span>🌿</span> <span>main*</span>
+        </div>
+        <span class="statusbar-item status-ok">
+          <span>✓</span> <span>0 errors</span>
+        </span>
+        <span class="statusbar-item statusbar-extra">
+          <span>⚠</span> <span>0 warnings</span>
+        </span>
+      </div>
+
+      <div class="statusbar-right">
+        <span class="statusbar-item statusbar-extra">UTF-8</span>
+        <span class="statusbar-item statusbar-extra">Python 3.11</span>
+        <span class="statusbar-item status-ok">● Netlify Ready</span>
+        <span class="statusbar-item" id="statusbar-clock">--:--:-- PKT</span>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Project Detail Modal -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-title">
+          <span>⚡</span> <span>Project Architecture &amp; Case Study</span>
+        </div>
+        <button class="modal-close-btn" onclick="closeProjectModal()" title="Close">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-project-details">
+        <!-- Injected via js/projects.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/matrix-canvas.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/terminal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

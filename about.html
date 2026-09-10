@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About & Research | Muhammad Arslan Jaffer</title>
+  <meta name="description" content="Biography, Education, IBCAST 2026 Research Publication, and Leadership experience of Muhammad Arslan Jaffer.">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+  <div class="cyber-grid-overlay"></div>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <main class="ide-container">
+    <!-- Top Application Bar -->
+    <header class="ide-titlebar">
+      <div class="ide-window-controls">
+        <span class="window-dot dot-red"></span>
+        <span class="window-dot dot-yellow"></span>
+        <span class="window-dot dot-green"></span>
+      </div>
+
+      <div class="ide-breadcrumbs">
+        <span>workspace</span>
+        <span class="separator">/</span>
+        <span>arslan-jaffer</span>
+        <span class="separator">/</span>
+        <span class="active-file" id="active-file-breadcrumb">about.md</span>
+      </div>
+
+      <div class="ide-quick-actions">
+        <div class="git-badge">
+          <span class="pulse"></span>
+          <span>git:(main)</span>
+        </div>
+        <button id="theme-toggle-btn" class="theme-toggle-btn">
+          <span>🌙 DARK</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- IDE Tab Bar -->
+    <nav class="ide-tabs-bar" aria-label="Page Tabs">
+      <a href="index.html" class="ide-tab">
+        <span class="tab-icon">🐍</span>
+        <span>home.py</span>
+      </a>
+      <a href="about.html" class="ide-tab active">
+        <span class="tab-icon">📝</span>
+        <span>about.md</span>
+      </a>
+      <a href="projects.html" class="ide-tab">
+        <span class="tab-icon">⚡</span>
+        <span>projects.json</span>
+      </a>
+      <a href="experience.html" class="ide-tab">
+        <span class="tab-icon">🔷</span>
+        <span>experience.ts</span>
+      </a>
+      <a href="skills.html" class="ide-tab">
+        <span class="tab-icon">⚙️</span>
+        <span>skills.yml</span>
+      </a>
+      <a href="contact.html" class="ide-tab">
+        <span class="tab-icon">💻</span>
+        <span>contact.sh</span>
+      </a>
+    </nav>
+
+    <!-- Content Area -->
+    <div class="ide-body">
+      <!-- Page Header -->
+      <section class="page-title-block">
+        <div class="page-badge">
+          <span>#</span> DEVELOPER DOSSIER
+        </div>
+        <h1 class="page-title">
+          About Me <span class="slash">//</span> Academic &amp; Research Profile
+        </h1>
+        <p class="page-subtitle">
+          Software Engineer eager to bridge theoretical intelligence with applied software engineering.
+          Passionate about building assistive tools, resilient AI architectures, and community-driven initiatives.
+        </p>
+      </section>
+
+      <!-- Markdown-Styled Bio Card -->
+      <section class="code-editor-card" style="margin-bottom: 32px;">
+        <div class="code-editor-header">
+          <div class="file-meta">
+            <span>📝</span>
+            <span>bio_overview.md</span>
+            <span class="code-inline" style="font-size: 0.7rem;">Markdown Preview</span>
+          </div>
+          <span style="color: var(--accent-cyan); font-size: 0.75rem;">~/arslan/profile</span>
+        </div>
+        <div style="padding: 24px 30px; line-height: 1.7; color: #cbd5e1;">
+          <h2 style="font-size: 1.3rem; color: #fff; margin-bottom: 12px;">Hello World! I'm Muhammad Arslan Jaffer 👋</h2>
+          <p style="margin-bottom: 14px;">
+            I am a <strong>Software Engineering Student</strong> at <strong>Air University, Islamabad</strong> with a strong focus on 
+            <strong>Deep Learning, Natural Language Processing, Retrieval-Augmented Generation (RAG), and Autonomous Agentic Workflows</strong>. 
+            My journey merges rigorous computer science foundations (Data Structures, Algorithms, Object-Oriented Design) with hands-on 
+            experience building full-stack applications and ML pipelines that solve real-world problems.
+          </p>
+          <p style="margin-bottom: 14px;">
+            Whether it's creating assistive platforms like <strong>AutiCom (Aasaan)</strong> for autistic children, deploying low-latency 
+            voice LLMs like <strong>Buddie AI</strong>, or building enterprise predictive analytics with <strong>Pinecone &amp; Streamlit</strong>, 
+            I prioritize clean system architecture, accessibility, and high performance.
+          </p>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 18px;">
+            <span class="skill-pill"><span class="dot"></span> Deep Learning</span>
+            <span class="skill-pill"><span class="dot"></span> NLP &amp; RAG</span>
+            <span class="skill-pill"><span class="dot"></span> Agentic AI (n8n)</span>
+            <span class="skill-pill"><span class="dot"></span> Computer Vision</span>
+            <span class="skill-pill"><span class="dot"></span> Full-Stack MERN</span>
+            <span class="skill-pill"><span class="dot"></span> Systems Programming (C++)</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Research & Publication Highlight -->
+      <section style="margin-bottom: 36px;">
+        <div style="margin-bottom: 16px;">
+          <span class="code-inline" style="font-size: 0.75rem;">// ACADEMIC PEER-REVIEWED RESEARCH</span>
+          <h2 style="font-size: 1.45rem; color: #fff; margin-top: 6px;">Publication &amp; Scholarship</h2>
+        </div>
+
+        <div class="publication-card">
+          <span class="pub-tag">CONFERENCE PAPER — IBCAST 2026</span>
+          <h3 class="pub-title">
+            "A Comparative Evaluation of Large Language Models for Accessibility Barrier Detection in Video Game Reviews"
+          </h3>
+          <p class="pub-authors">
+            Authors: K. Batool, F. Gillani, and <strong>M. A. Jaffer</strong>
+          </p>
+          <p class="pub-venue">
+            Proceedings of the International Bhurban Conference on Applied Sciences and Technologies (IBCAST), 2026.
+          </p>
+          <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 20px; line-height: 1.6;">
+            <strong>Abstract:</strong> Investigates and benchmarks state-of-the-art Large Language Models (LLMs) in automating the extraction and 
+            categorization of accessibility barriers from unstructured video game user feedback. The research demonstrates how LLM prompt engineering 
+            and fine-tuned classifiers can empower game developers to discover motor, visual, and cognitive hurdles faced by disabled gamers.
+          </p>
+          <div class="pub-actions">
+            <button class="btn btn-primary btn-sm" onclick="copyBibTeX()">
+              📋 Copy BibTeX Citation
+            </button>
+            <a href="https://orcid.org" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+              <svg width="14" height="14" viewBox="0 0 256 256" fill="currentColor"><path d="M128 0C57.308 0 0 57.308 0 128s57.308 128 128 128 128-57.308 128-128S198.692 0 128 0zm-29.538 186.462H73.846V69.538h24.616v116.924zm-12.308-132c-7.923 0-14.308-6.385-14.308-14.308 0-7.923 6.385-14.308 14.308-14.308s14.308 6.385 14.308 14.308c0 7.923-6.385 14.308-14.308 14.308zm119.385 86.462c-15.077 22.154-39.692 32.615-66.462 32.615H112V69.538h32.923c28.308 0 50.154 9.538 64.923 30.769 13.846 19.692 14.154 49.231-.461 70.462zm-20.923-53.538c-8.923-14.154-22.769-19.385-42.769-19.385h-10.462v85.538h11.077c20.308 0 33.538-6.154 42.154-20.615 8.923-14.769 8.923-31.077 0-45.538z"/></svg>
+              ORCID Profile
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Roadmap -->
+      <section style="margin-bottom: 36px;">
+        <div style="margin-bottom: 16px;">
+          <span class="code-inline" style="font-size: 0.75rem;">// ACADEMIC TIMELINE</span>
+          <h2 style="font-size: 1.45rem; color: #fff; margin-top: 6px;">Education &amp; Qualifications</h2>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Air University -->
+          <div class="timeline-card">
+            <div class="timeline-header-row">
+              <div>
+                <h3 class="timeline-role">BSc. Software Engineering</h3>
+                <div class="timeline-company">Air University, Islamabad</div>
+              </div>
+              <span class="timeline-period">Sep 2023 – Present</span>
+            </div>
+            <div class="timeline-body">
+              <p>Specializing in Machine Learning, Software Architecture, and Full-Stack Engineering.</p>
+              <ul>
+                <li>Core Coursework: Data Structures &amp; Algorithms, Object-Oriented Design, Database Systems (Oracle/MySQL), Operating Systems, Software Design &amp; Architecture.</li>
+                <li>Final Year Project (FYP): <strong>AutiCom (Aasaan)</strong> — Assistive AI speech &amp; behavioral platform for autistic children.</li>
+                <li>Active leader in tech campus communities and student governance.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- APS&CS FSc -->
+          <div class="timeline-card">
+            <div class="timeline-header-row">
+              <div>
+                <h3 class="timeline-role">FSc (Pre-Engineering)</h3>
+                <div class="timeline-company">Army Public School &amp; College System (APS&CS), Rawalpindi</div>
+              </div>
+              <span class="timeline-period">Sep 2021 – Jun 2023</span>
+            </div>
+            <div class="timeline-body">
+              <p>Concentration in Advanced Mathematics, Physics, and Analytical Problem Solving.</p>
+            </div>
+          </div>
+
+          <!-- APS&CS Matric -->
+          <div class="timeline-card">
+            <div class="timeline-header-row">
+              <div>
+                <h3 class="timeline-role">Matric SSc (ICS - Computer Science)</h3>
+                <div class="timeline-company">Army Public School &amp; College System (APS&CS), Rawalpindi</div>
+              </div>
+              <span class="timeline-period">Apr 2019 – Jul 2021</span>
+            </div>
+            <div class="timeline-body">
+              <p>Foundational Computer Science, Programming Logic, and Computer Hardware Architecture.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Extracurricular Leadership -->
+      <section style="margin-bottom: 20px;">
+        <div style="margin-bottom: 16px;">
+          <span class="code-inline" style="font-size: 0.75rem;">// LEADERSHIP &amp; COMMUNITY</span>
+          <h2 style="font-size: 1.45rem; color: #fff; margin-top: 6px;">Campus Leadership &amp; Impact</h2>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px;">
+          <!-- GDG on Campus -->
+          <div class="stat-item" style="display: flex; flex-direction: column;">
+            <div style="font-size: 1.15rem; font-weight: 700; color: #fff; margin-bottom: 4px;">
+              Graphics Team Lead
+            </div>
+            <div style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 0.82rem; margin-bottom: 10px;">
+              Google Developer Groups (GDG) on Campus (Air University)
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.55;">
+              Directed visual branding and designed marketing campaigns for flagship AI-themed events including 
+              <em>'Beyond Prompting'</em>, <em>'Build with AI'</em>, <em>'AI Seekho'</em>, <em>'Code Air 3.0'</em>, and <em>'Code Air 4.0'</em>.
+            </p>
+          </div>
+
+          <!-- AUAWS -->
+          <div class="stat-item" style="display: flex; flex-direction: column;">
+            <div style="font-size: 1.15rem; font-weight: 700; color: #fff; margin-bottom: 4px;">
+              General Secretary
+            </div>
+            <div style="color: var(--accent-purple); font-family: var(--font-mono); font-size: 0.82rem; margin-bottom: 10px;">
+              Air University Animal Welfare Society (AUAWS)
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.55;">
+              Directed campus welfare initiatives, rescue operations, and coordinated large-scale flagship events 
+              such as <em>Pet Fest '26</em>, fostering empathetic community awareness.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- IDE Status Bar -->
+    <footer class="ide-statusbar">
+      <div class="statusbar-left">
+        <span class="statusbar-item git">
+          <span>🌿</span> <span>main*</span>
+        </span>
+        <span class="statusbar-item status-ok">
+          <span>✓</span> <span>0 errors</span>
+        </span>
+      </div>
+      <div class="statusbar-right">
+        <span class="statusbar-item statusbar-extra">Markdown 2.0</span>
+        <span class="statusbar-item status-ok">● Netlify Ready</span>
+        <span class="statusbar-item" id="statusbar-clock">--:--:-- PKT</span>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/matrix-canvas.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
