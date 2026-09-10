@@ -19,12 +19,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function highlightActiveTab() {
   const path = window.location.pathname;
-  const page = path.split("/").pop() || "index.html";
+  let page = path.split("/").pop();
+  if (!page || page === "") page = "index.html";
+
+  const pageBase = page.replace(".html", "") || "index";
 
   const tabs = document.querySelectorAll(".ide-tab");
   tabs.forEach(tab => {
     const href = tab.getAttribute("href");
-    if (href === page || (page === "" && href === "index.html") || (page === "/" && href === "index.html")) {
+    const hrefBase = href.replace(".html", "");
+    if (href === page || hrefBase === pageBase || (pageBase === "index" && hrefBase === "index")) {
       tab.classList.add("active");
     } else {
       tab.classList.remove("active");
@@ -36,13 +40,19 @@ function highlightActiveTab() {
   if (activeFileEl) {
     const fileMap = {
       "index.html": "home.py",
+      "index": "home.py",
       "about.html": "about.md",
+      "about": "about.md",
       "projects.html": "projects.json",
+      "projects": "projects.json",
       "experience.html": "experience.ts",
+      "experience": "experience.ts",
       "skills.html": "skills.yml",
-      "contact.html": "contact.sh"
+      "skills": "skills.yml",
+      "contact.html": "contact.sh",
+      "contact": "contact.sh"
     };
-    activeFileEl.textContent = fileMap[page] || "home.py";
+    activeFileEl.textContent = fileMap[page] || fileMap[pageBase] || "home.py";
   }
 }
 

@@ -6,7 +6,7 @@
 const PROJECTS_DATA = [
   {
     id: "auticom-aasaan",
-    title: "AutiCom (Aasaan) — Autism Aid Platform",
+    title: "Parwarish.ai (AutiCom / Aasaan) — Autism Aid Platform",
     category: "ai-ml",
     isFeatured: true,
     deployType: "fyp",
@@ -338,8 +338,6 @@ function initProjectsPage() {
   const container = document.getElementById("all-projects-grid");
   if (!container) return;
 
-  renderProjectsGrid(PROJECTS_DATA, "all-projects-grid");
-
   const filterChips = document.querySelectorAll(".filter-chip");
   const searchInput = document.getElementById("project-search");
 
@@ -349,17 +347,7 @@ function initProjectsPage() {
   let currentCategory = filterParam ? filterParam : "all";
   let searchQuery = "";
 
-  if (filterParam) {
-    filterChips.forEach(chip => {
-      if (chip.getAttribute("data-filter") === filterParam) {
-        chip.classList.add("active");
-      } else {
-        chip.classList.remove("active");
-      }
-    });
-  }
-
-  applyFilter();
+  function applyFilter() {
     let filtered = PROJECTS_DATA;
 
     if (currentCategory !== "all") {
@@ -377,6 +365,19 @@ function initProjectsPage() {
 
     renderProjectsGrid(filtered, "all-projects-grid");
   }
+
+  if (filterParam) {
+    filterChips.forEach(chip => {
+      if (chip.getAttribute("data-filter") === filterParam) {
+        chip.classList.add("active");
+      } else {
+        chip.classList.remove("active");
+      }
+    });
+  }
+
+  // Initial render
+  applyFilter();
 
   filterChips.forEach(chip => {
     chip.addEventListener("click", () => {
